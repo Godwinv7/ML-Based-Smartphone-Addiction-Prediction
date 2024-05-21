@@ -1,0 +1,182 @@
+{% extends 'base2.html' %}
+{% block code %}
+<section id="hero">
+    <div class="hero-container">
+    <div class="cg-text">
+<form action="" method="post">
+            {% csrf_token %}
+            <div style="background-color: white; color: black;">
+              <h1>{{msg}}</h1>
+            </div>
+
+
+          <table>
+              <tr>
+                  
+                  <td>                
+                          <label style="color: white;">Full Name :</label>
+                          <br>
+                          <input type="float" name="f1" placeholder="Full Name :" style="height:30px;">
+                 </td>
+                 &nbsp&nbsp
+                 <td>                
+                          <label style="color: white;">Gender :  </label>
+                          <br>
+                          <select name="f2" id="f2" style="width: 250px; height: 50px;">
+                          <option value=""><h2 style="color: white;">chose Gender</h2></option>
+                          <option value="0"><h2 style="color: white;">Male</h2></option>
+                          <option value="1"><h2 style="color: white;">Female</h2></option>
+                          <option value="2"><h2 style="color: white;">Others</h2></option>
+                 </td>
+                 &nbsp&nbsp
+                 <td>                
+                          <label style="color: white;">Do you use your phone to click pictures of class notes? </label>
+                          <br>
+                          <input type="float" name="f3" placeholder="Do you use your phone to click pictures of class notes? " style="height:30px;">
+                 </td>
+                 &nbsp&nbsp
+                 <td>                
+                          <label style="color: white;">Do you buy books/access books from your mobile?</label>
+                          <br>
+                          <input type="float" name="f4" placeholder="Do you buy books/access books from your mobile?" style="height:30px;">
+                 </td>
+                 &nbsp&nbsp
+                 <td>                
+                  <label style="color: white;">Does your phone's battery last a day?</label>
+                  <br>
+                  <input type="float" name="f5" placeholder="Does your phone's battery last a day?" style="height:30px;"> 
+                  </td>
+                  &nbsp&nbsp
+                  <td>                
+                    <label style="color: white;">When your phone's battery dies out, do you run for the charger?</label>
+                    <br>
+                    <input type="float" name="f6" placeholder="When your phone's battery dies out, do you run for the charger?" style="height:30px;">
+           </td>
+           &nbsp&nbsp
+           <td>                
+                    <label style="color: white;">Do you worry about losing your cell phone?</label>
+                    <br>
+                    <input type="float" name="f7" placeholder="Do you worry about losing your cell phone?" style="height:30px;">
+           </td>
+                  
+                 <br>
+            
+  
+  
+              </tr>
+              <tr>
+          </table>
+
+
+          <table>
+            <tr>
+                
+                
+               
+               <td>                
+                        <label style="color: white;">Do you take your phone to the bathroom?</label>
+                        <br>
+                        <input type="float" name="f8" placeholder="Do you take your phone to the bathroom?" style="height:30px;">
+               </td>
+               &nbsp&nbsp
+               <td>            
+               <label style="color: white;">Do you use your phone in any social gathering (parties)?</label>
+            <br>
+            <input type="float" name="f9" placeholder="Do you use your phone in any social gathering (parties)?" style="height:30px;">
+            </td>
+             &nbsp&nbsp
+               <td>                
+                        <label style="color: white;">Do you often check your phone without any notification?</label>
+                        <br>
+                        <input type="float" name="f10" placeholder="Do you often check your phone without any notification?" style="height:30px;">
+               </td>
+               &nbsp&nbsp
+               <td>                
+                <label style="color: white;">Do you check your phone just before going to sleep/just after waking up?</label>
+                <br>
+                <input type="float" name="f11" placeholder="Do you check your phone just before going to sleep/just after waking up?" style="height:30px;">
+                </td>
+
+                <td>                
+                  <label style="color: white;"> Do you keep your phone right next to you while sleeping?</label>
+                  <br>
+                  <input type="float" name="f12" placeholder=" Do you keep your phone right next to you while sleeping?" style="height:30px;">
+         </td>
+         
+         <td>                
+                  <label style="color: white;">Do you check emails, missed calls, texts during class time?</label>
+                  <br>
+                  <input type="float" name="f13" placeholder="Do you check emails, missed calls, texts during class time?" style="height:30px;">
+         </td>
+         
+         <td>                
+                  <label style="color: white;">Do you find yourself relying on your phone when things get awkward?</label>
+                  <br>
+                  <input type="float" name="f14" placeholder="Do you find yourself relying on your phone when things get awkward?" style="height:30px;">
+         </td>
+                
+               <br>
+          
+
+
+            </tr>
+            <tr>
+        </table>
+
+
+
+      <table>
+        <tr>
+
+            <td>                
+                  <label style="color: white;">Are you on your phone while watching TV or eating food?</label>
+                  <br>
+                  <input type="float" name="f15" placeholder="Are you on your phone while watching TV or eating food?" style="height:30px;">
+         </td>
+            
+            <td>                
+                    <label style="color: white;">Do you have a panic attack if you leave your phone elsewhere? </label>
+                    <br>
+                    <input type="float" name="f16" placeholder="Do you have a panic attack if you leave your phone elsewhere? " style="height:30px;">
+           </td>
+           
+           <td>                
+                    <label style="color: white;">You don't mind responding to messages or checking your phone while on date?</label>
+                    <br>
+                    <input type="float" name="f17" placeholder="You don't mind responding to messages or checking your phone while on date?" style="height:30px;">
+           </td>
+           
+           <td>                
+                    <label style="color: white;">For how long do you use your phone for playing games?</label>
+                    <br>
+                    <input type="float" name="f18" placeholder="For how long do you use your phone for playing games?" style="height:30px;">
+           </td>
+           
+           <td>                
+                    <label style="color: white;">Can you live a day without phone ? </label>
+                    <br>
+                    <input type="float" name="f19" placeholder="Can you live a day without phone ? " style="height:30px;">
+           </td>
+           <br>
+      
+
+
+        </tr>
+        <tr>
+    </table>
+   
+                 
+
+                         
+                   
+                  <br>
+              <div class="centered">
+                <br><br>
+              <button type="submit" class="btn btn-primary" style="width: 400px; border-radius: 20%; height:50px;">Submit</button>
+          </form>
+          </div>
+          
+    </div>
+    
+  </section><!-- End Hero -->
+{% endblock %}

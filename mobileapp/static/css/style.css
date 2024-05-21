@@ -1,0 +1,99 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+  background: url("../img/iii.gif") top center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Fixed sidenav, full height */
+
+.nav{
+  background: url(/static/img/iphone2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 530px;
+  border-radius: 20px;
+}
+
+.nav ul{
+  display: inline;
+  text-align: center;
+  margin: 10%;
+}
+
+.nav ul li{
+  padding: 2%;
+}
+
+.nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.heading{
+  top: 40%;
+  left: 35%;
+  text-align: center;
+  position: absolute;
+  border-style: solid;
+}
+
+.heading h1 {
+  margin: 0 0 15px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: gold;
+}
+
+.heading h2{
+color: white;
+font-size: 25px;
+}
+
+.heading1{
+  top: 10%;
+  left: 40%;
+  color: gold;
+  text-align: center;
+  position: absolute;
+  border-style: solid;
+}
+
+.text{
+  top: 20%;
+  left: 30%;
+  right: 5%;
+  text-align: center;
+  position: absolute;
+  border-style: solid;
+}
+
+.text h1{
+  color: gold;
+}
+
+.text p{
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.register{
+  top: 10%;
+  left: 30%;
+  right: 5%;
+  text-align: center;
+  position: absolute;
+  border-style: solid;
+}

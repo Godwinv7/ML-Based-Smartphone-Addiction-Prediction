@@ -1,0 +1,28 @@
+{% extends 'base2.html' %}
+{% block code %}
+    <div class="train">
+      <form action="" enctype="multipart/form-data" method="post">
+            <center><b><h1 style="color:white">{{msg}}</h1></b></center>
+            {% csrf_token %}
+          <center><label for="algo"><h1 style="color:white;">:algorithms:</h1></label>
+                <br>
+        
+                <select name="algo" id="algo"  style="width: 700px; height: 70px;">
+                  <option value="" ><h2>chose Module</h2></option>
+                  <option value="2"><h2>DecisionTree</h2></option>
+                  <option value="1"><h2>RandomForest</h2></option>
+                  <option value="3"><h2>Logistic Regration</h2></option>                                   
+                  <option value="4"><h2>CNN</h2></option>                                   
+                  <option value="5"><h2>MLPClassifier</h2></option>                                   
+        
+                </select>
+                <br><br>
+                <button type="submit" class="btn btn-primary" style="width: 200px; height:50px; background-color:red;">Submit</button>
+                </center>
+                   
+                </div>
+            
+           </div>
+          </form>
+    </div>
+{% endblock %}

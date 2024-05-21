@@ -1,0 +1,19 @@
+{% extends 'base2.html' %}
+{% block code %}
+ <!-- ======= Hero Section ======= -->
+    <div class="view">
+    <form class="row g-3" action="{% url 'view' %}" method="post">
+    {% csrf_token %}
+    <h2>Enter  a Number How Much Data view</h2>
+    <input type="number" name="num" id="form3Example4cg" class="form-control"
+                        placeholder="NUmber" style="width:300px; height:55px"/>
+    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success" style="width:250px; height:25px; background-color:pink;"><h2>SUBMIT</h2></button>
+                    </div>
+      </div>              
+    </form>
+    <div class="bg-text">
+    <h4 style="color:white">{{table|safe}}</h4>
+      </div>
+{% endblock %}
+

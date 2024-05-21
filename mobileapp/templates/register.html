@@ -1,0 +1,72 @@
+{%extends 'base.html'%}
+{% block code%}
+
+    <div class="register">
+     <form class="row g-3" action="{% url 'register' %}" method="post">
+                    {% csrf_token %}
+                    <h2 class="text-uppercase text-center mb-5" style="color: white;">Registration</h2>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example1cg" style="color: white;">Your Name</label>
+                      <br>
+                      <input type="text" name="Name" id="form3Example1cg" class="form-control"
+                        placeholder="Your Name"  style="width:300px; height:40px"/>
+
+                    </div>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example3cg" style="color: white;">Your Email</label>
+                      <br>
+                      <input type="email" name="email" id="form3Example3cg" class="form-control"
+                        placeholder="Your Email" style="width:300px; height:40px"/>
+
+                    </div>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example4cg" style="color: white;">Password</label>
+                      <br>
+                      <input type="password" name="password" id="form3Example4cg" class="form-control"
+                        placeholder="Password" style="width:300px; height:40px"/>
+
+                    </div>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example4cdg" style="color: white;">Repeat your password</label>
+                      <br>
+                      <input type="password" name="conpassword" id="form3Example4cdg" class="form-control"
+                        placeholder="Repeat your Password" style="width:300px; height:40px" />
+
+                    </div>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example4cdg" style="color: white;">Age</label>
+                      <br>
+                      <input type="number" name="Age" id="form3Example4cdg" class="form-control"
+                        placeholder="Age" style="width:300px; height:40px"/>
+
+                    </div>
+                    <br><br>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form3Example4cdg" style="color: white;">contact</label>
+                      <br>
+                      <input type="number" name="contact" id="form3Example4cdg" class="form-control"
+                        placeholder="contact" style="width:300px; height:40px" />
+
+                    </div>
+                    <br><br>
+
+
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success" style="width:500px; height:50px; background-color:pink;"><h2>Register</h2></button>
+                    </div>
+
+
+                  </form>
+                  </div>
+{% endblock %}
