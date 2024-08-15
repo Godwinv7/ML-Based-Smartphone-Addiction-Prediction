@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
+
+{% load static %}  <!-- Add this line to load static template tag -->
+
 {% block code %}
- <!-- ======= Hero Section ======= -->
-<div class="heading">
-      <h1>smartphone addiction</h1>
-      <h2>Machine learning model for prediction of smartphone addiction</h2>
-      </div>
+    <!-- ======= Hero Section ======= -->
+    <link rel="stylesheet" href="static/styles/user_home1.css">  <!-- Corrected path -->
+    <div class="heading">
+        <h1>smartphone addiction</h1>
+        <h2>Machine learning model for prediction of smartphone addiction</h2>
     </div>
 {% endblock %}
-

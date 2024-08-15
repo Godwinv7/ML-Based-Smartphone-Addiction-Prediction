@@ -1,28 +1,24 @@
 {% extends 'base2.html' %}
 {% block code %}
+<link rel="stylesheet" href="static/styles/module.css"> 
     <div class="train">
-      <form action="" enctype="multipart/form-data" method="post">
-            <center><b><h1 style="color:white">{{msg}}</h1></b></center>
+        <form action="" enctype="multipart/form-data" method="post">
+            <center><b><h1>{{ msg }}</h1></b></center>
             {% csrf_token %}
-          <center><label for="algo"><h1 style="color:white;">:algorithms:</h1></label>
+            <center>
+                <label for="algo"><h1>:algorithms:</h1></label>
                 <br>
-        
-                <select name="algo" id="algo"  style="width: 700px; height: 70px;">
-                  <option value="" ><h2>chose Module</h2></option>
-                  <option value="2"><h2>DecisionTree</h2></option>
-                  <option value="1"><h2>RandomForest</h2></option>
-                  <option value="3"><h2>Logistic Regration</h2></option>                                   
-                  <option value="4"><h2>CNN</h2></option>                                   
-                  <option value="5"><h2>MLPClassifier</h2></option>                                   
-        
+                <select name="algo" id="algo">
+                    <option value="">Choose Module</option>
+                    <option value="2">DecisionTree</option>
+                    <option value="1">RandomForest</option>
+                    <option value="3">Logistic Regression</option>
+                    <option value="4">CNN</option>
+                    <option value="5">MLPClassifier</option>
                 </select>
                 <br><br>
-                <button type="submit" class="btn btn-primary" style="width: 200px; height:50px; background-color:red;">Submit</button>
-                </center>
-                   
-                </div>
-            
-           </div>
-          </form>
+                <button type="submit">Submit</button>
+            </center>
+        </form>
     </div>
 {% endblock %}
