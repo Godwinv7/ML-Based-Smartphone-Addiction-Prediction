@@ -1,0 +1,133 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Adjusted height to account for the navigation bar */
+
+    padding-top: 60px; /* Ensure there's padding at the top */
+}
+
+.hero-container {
+    margin-top: 30vh;
+
+    
+   
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.cg-text {
+    width: 100%;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #212529;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+   
+}
+
+.questions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.question-group {
+    flex: 1 1 18%; /* Adjusts width to fit 5 items in a row */
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #495057;
+    display: block;
+}
+
+input[type="float"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #495057;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type="float"]:focus,
+select:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Centered Button */
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .questions-container {
+        flex-direction: column;
+    }
+
+    .question-group {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input[type="float"],
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

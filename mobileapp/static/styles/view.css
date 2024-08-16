@@ -1,0 +1,60 @@
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: black;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+input[type="number"] {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Background Text */
+.bg-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="number"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

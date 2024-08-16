@@ -1,0 +1,61 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.heading1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.image {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.text {
+    max-width: 70%;
+}
+
+.text h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+}

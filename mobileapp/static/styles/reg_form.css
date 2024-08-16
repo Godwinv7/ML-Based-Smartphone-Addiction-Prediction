@@ -1,0 +1,68 @@
+.register {
+    max-width: auto; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:nth-child(2), /* Name */
+.form-group:nth-child(3), /* Email */
+.form-group:nth-child(4), /* Password */
+.form-group:nth-child(5), /* Repeat Password */
+.form-group:nth-child(6), /* Age */
+.form-group:nth-child(7), /* Contact */
+.form-group:nth-child(8) { /* Additional form groups if any */
+    grid-column: span 1;
+}
+
+.button {
+    grid-column: span 2; /* Span across both columns */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
