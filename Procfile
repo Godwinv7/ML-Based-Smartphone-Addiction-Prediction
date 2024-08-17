@@ -1,0 +1,1 @@
+web gunicorn mobile.wsgi:application --log-file -
